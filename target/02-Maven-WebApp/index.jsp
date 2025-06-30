@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <title>Animated JSP Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         /* Background animation */
         body {

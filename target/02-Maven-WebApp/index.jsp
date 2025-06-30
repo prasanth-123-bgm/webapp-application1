@@ -1,9 +1,9 @@
+<%@ page import="java.util.Calendar" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Animated JSP Page</title>
+    <title>Welcome Page</title>
     <style>
-        /* Background animation */
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
@@ -42,11 +42,6 @@
             margin-bottom: 0.3em;
         }
 
-        p {
-            font-size: 1.2em;
-            margin-bottom: 2em;
-        }
-
         .btn {
             padding: 15px 30px;
             font-size: 1em;
@@ -74,13 +69,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My JSP Page!</h1>
-        <p>This page is powered by JSP with smooth animations and effects.</p>
-        <button class="btn" onclick="window.location.href='login.jsp'">Get Started</button>
+        <h1>Welcome, Prasuu!</h1>
+        <p>This JSP page is ready for WAR deployment with Jenkins and Tomcat!</p>
+        <button class="btn" onclick="location.href='login.jsp'">Login</button>
     </div>
 
     <footer>
-        &copy; <%= java.time.Year.now() %> Prasuu Dev Studio
+        &copy; <%= Calendar.getInstance().get(Calendar.YEAR) %> Prasuu Dev Studio
     </footer>
 </body>
 </html>
